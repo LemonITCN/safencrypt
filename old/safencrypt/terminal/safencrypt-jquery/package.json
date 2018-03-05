@@ -1,0 +1,25 @@
+{
+  "name": "safencrypt-jquery",
+  "version": "1.0.0",
+  "description": "safencrypt - safty!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1iURI/safencrypt.git"
+  },
+  "keywords": [
+    "safe",
+    "safencrypt",
+    "encrypt"
+  ],
+  "author": "1iURI",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/1iURI/safencrypt/issues"
+  },
+  "homepage": "https://github.com/1iURI/safencrypt#readme",
+  "devDependencies": {}
+}

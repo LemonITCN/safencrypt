@@ -1,0 +1,35 @@
+{
+  "name": "safencrypt",
+  "version": "1.0.0",
+  "description": "safencrypt",
+  "main": "safencrypt-config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1iURI/safencrypt.git"
+  },
+  "keywords": [
+    "safencrypt",
+    "encrypt",
+    "safe"
+  ],
+  "author": "1iURI",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/1iURI/safencrypt/issues"
+  },
+  "homepage": "https://github.com/1iURI/safencrypt#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "jshint": "^2.9.5"
+  }
+}

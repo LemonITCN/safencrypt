@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>safencrypt</title>
+</head>
+<body>
+<button id="base-on-client-msg">请求基于客户端的消息</button>
+<div id="base-on-client-msg-result"></div>
+<button id="base-on-user-msg">发送基于用户身份加密的消息</button>
+<div id="base-on-user-msg-result"></div>
+<button id="base-on-client-get">发送基于客户端的GET请求</button>
+<div id="base-on-client-get-result"></div>
+</body>
+<script src="safencrypt.js"></script>
+<!--<script src="lib/crypto-js/crypto-js.js"></script>-->
+<!--<script src="lib/jquery/dist/jquery.min.js"></script>-->
+<script src="safencrypt-config.js"></script>
+<script>
+    $(function () {
+        Safencrypt.startUp();
+
+        $('#base-on-client-msg').click(function () {
+            $.ajax({
+                url: "http://localhost:8080/client-msg",
+                type: 'POST',
+                contentType: "application/json;charset=UTF-8",
+                data: JSON.stringify({
+                    msg: '你好= safencrypt!'
+                }),
+                success: function (data) {
+                    $('#base-on-client-msg-result').text(JSON.stringify(data));
+                },
+                error: function (err) {
+                    console.log('发生一个错误！');
+                }
+            });
+        });
+        $('#base-on-user-msg').click(function () {
+            $.ajax({
+                type: "POST",
+                url: "http://localhost:8080/user-msg",
+                contentType: "application/json;charset=UTF-8",
+                data: JSON.stringify({
+                    "msg": "my name is safencrypt!"
+                }),
+                success: function (data) {
+                    $('#base-on-user-msg-result').text(JSON.stringify(data));
+                },
+                error: function (err) {
+                    console.log(err);
+                }
+            })
+        });
+
+        $('#base-on-client-get').click(function () {
+            $.ajax({
+                type: "GET",
+                url: "http://localhost:8080/get",
+                data: {
+                    name: "liuri",
+                    msg: "hahah"
+                },
+                success: function (data) {
+                    $('#base-on-client-get-result').text(JSON.stringify(data));
+                },
+                error: function (err) {
+                    console.log('发生一个错误on！');
+                }
+            })
+        });
+    });
+</script>
+</html>
