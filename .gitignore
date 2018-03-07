@@ -1,0 +1,7 @@
+.DS_Store 
+*/.DS_Store
+git rm server/safencrypt-springboot/target
+server/safencrypt-springboot/.idea/
+server/safencrypt-springboot/target/
+terminal/safencrypt-js/node_modules/
+terminal/safencrypt-js/lib/

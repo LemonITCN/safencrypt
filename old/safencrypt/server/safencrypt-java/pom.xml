@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>win.liuri</groupId>
-    <artifactId>safencrypt</artifactId>
+    <groupId>cn.lemonit.safencrypt</groupId>
+    <artifactId>safencrypt-springboot</artifactId>
     <description>自动数据传输报文加密解密</description>
     <version>0.0.1</version>
 

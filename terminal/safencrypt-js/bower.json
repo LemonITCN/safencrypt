@@ -1,0 +1,26 @@
+{
+  "name": "safencrypt-js",
+  "homepage": "https://github.com/1iURI/safencrypt",
+  "authors": [
+    "1iURI"
+  ],
+  "description": "safencrypt-js make your project safe",
+  "main": "",
+  "keywords": [
+    "safencrypt",
+    "safe",
+    "encrypt"
+  ],
+  "license": "Apache-2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "crypto-js": "^3.1.9"
+  }
+}
