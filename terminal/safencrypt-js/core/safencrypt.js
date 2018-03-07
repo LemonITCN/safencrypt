@@ -25,6 +25,7 @@ function Safencrypt() {
             },
             success: function (data) {
                 self.log('获取公钥成功，FLAG = ' + data.flag);
+                console.log('encrypt = %O', data);
                 callback(data.modulus, data.exponent, data.flag);
             },
             error: function (err) {

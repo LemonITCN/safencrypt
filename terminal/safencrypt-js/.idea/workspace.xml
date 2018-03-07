@@ -24,22 +24,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ajax-inject.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ajax-inject.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/ajax-inject.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="146" column="40" lean-forward="false" selection-start-line="146" selection-start-column="40" selection-end-line="146" selection-end-column="40" />
+            <state relative-caret-position="133">
+              <caret line="166" column="24" lean-forward="true" selection-start-line="166" selection-start-column="24" selection-end-line="166" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="safencrypt.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="safencrypt.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/safencrypt.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="17175" column="49" lean-forward="false" selection-start-line="17175" selection-start-column="32" selection-end-line="17175" selection-end-column="49" />
-              <folding />
+            <state relative-caret-position="-1099">
+              <caret line="17199" column="50" lean-forward="false" selection-start-line="17199" selection-start-column="50" selection-end-line="17199" selection-end-column="50" />
+              <folding>
+                <marker date="1520400662580" expanded="true" signature="7550:7552" ph="{...}" />
+                <marker date="1520400662580" expanded="true" signature="490213:490293" ph="{...}" />
+                <marker date="1520400662580" expanded="true" signature="490213:490436" ph="{&quot;url&quot;: safencrypt_config.apply_public_key_url...}" />
+                <marker date="1520400662580" expanded="true" signature="490213:490444" ph="{...}" />
+                <marker date="1520400662580" expanded="true" signature="490329:490426" ph="{...}" />
+                <marker date="1520400662580" expanded="true" signature="490451:490475" ph="/** 注册客户端 ...*/" />
+                <marker date="1520400662580" expanded="true" signature="490551:491810" ph="{...}" />
+                <marker date="1520400662580" expanded="true" signature="490658:491802" ph="{...}" />
+                <marker date="1520400662580" expanded="true" signature="490858:491791" ph="{&quot;url&quot;: safencrypt_config.sign_up_client_url...}" />
+                <marker date="1520400662580" expanded="true" signature="491079:491212" ph="{&quot;type&quot;: REQ_TYPE_SIGN_UP_CLIENT...}" />
+                <marker date="1520400662580" expanded="true" signature="491256:491607" ph="{...}" />
+                <marker date="1520400662580" expanded="true" signature="491647:491777" ph="{...}" />
+                <marker date="1520400662580" expanded="true" signature="491817:491843" ph="/** 获取浏览器标识 ...*/" />
+                <marker date="1520400662580" expanded="true" signature="491881:492390" ph="{...}" />
+                <marker date="1520400662580" expanded="true" signature="492016:492292" ph="{...}" />
+                <marker date="1520400662580" expanded="true" signature="492092:492231" ph="{...}" />
+                <marker date="1520400662580" expanded="true" signature="492397:492459" ph="/** 检测本地是否已经存储了CToken ...*/" />
+                <marker date="1520400662580" expanded="true" signature="492495:492621" ph="{...}" />
+                <marker date="1520400662580" expanded="true" signature="492628:492682" ph="/** 输出Safencrypt格式的日志 ...*/" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/safencrypt.min.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="14328" lean-forward="false" selection-start-line="0" selection-start-column="14328" selection-end-line="0" selection-end-column="14328" />
+              <caret line="0" column="14358" lean-forward="false" selection-start-line="0" selection-start-column="14358" selection-end-line="0" selection-end-column="14358" />
               <folding />
             </state>
           </provider>
@@ -88,7 +108,7 @@
         <entry file="file://$PROJECT_DIR$/safencrypt-config.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+              <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -97,8 +117,8 @@
       <file leaf-file-name="safencrypt.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/safencrypt.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="134" column="19" lean-forward="false" selection-start-line="134" selection-start-column="19" selection-end-line="134" selection-end-column="19" />
+            <state relative-caret-position="-7">
+              <caret line="121" column="25" lean-forward="true" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -155,11 +175,11 @@
       <list>
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/core/rsa-wc.js" />
-        <option value="$PROJECT_DIR$/core/safencrypt.js" />
-        <option value="$PROJECT_DIR$/safencrypt.js" />
         <option value="$PROJECT_DIR$/core/ajax-inject.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/safencrypt-config.js" />
+        <option value="$PROJECT_DIR$/safencrypt.js" />
+        <option value="$PROJECT_DIR$/core/safencrypt.js" />
       </list>
     </option>
   </component>
@@ -379,12 +399,12 @@
       <workItem from="1516759289971" duration="947000" />
       <workItem from="1516932534740" duration="378000" />
       <workItem from="1517993065388" duration="234000" />
-      <workItem from="1520387491790" duration="1131000" />
+      <workItem from="1520387491790" duration="3210000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53053000" />
+    <option name="totallyTimeSpent" value="55132000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="-180" width="1920" height="1080" extended-state="0" />
@@ -483,7 +503,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4114">
           <caret line="187" column="77" lean-forward="false" selection-start-line="187" selection-start-column="77" selection-end-line="187" selection-end-column="77" />
-          <folding />
+          <folding>
+            <marker date="1520400662580" expanded="true" signature="7550:7552" ph="{...}" />
+            <marker date="1520400662580" expanded="true" signature="490213:490293" ph="{...}" />
+            <marker date="1520400662580" expanded="true" signature="490213:490436" ph="{&quot;url&quot;: safencrypt_config.apply_public_key_url...}" />
+            <marker date="1520400662580" expanded="true" signature="490213:490444" ph="{...}" />
+            <marker date="1520400662580" expanded="true" signature="490329:490426" ph="{...}" />
+            <marker date="1520400662580" expanded="true" signature="490451:490475" ph="/** 注册客户端 ...*/" />
+            <marker date="1520400662580" expanded="true" signature="490551:491810" ph="{...}" />
+            <marker date="1520400662580" expanded="true" signature="490658:491802" ph="{...}" />
+            <marker date="1520400662580" expanded="true" signature="490858:491791" ph="{&quot;url&quot;: safencrypt_config.sign_up_client_url...}" />
+            <marker date="1520400662580" expanded="true" signature="491079:491212" ph="{&quot;type&quot;: REQ_TYPE_SIGN_UP_CLIENT...}" />
+            <marker date="1520400662580" expanded="true" signature="491256:491607" ph="{...}" />
+            <marker date="1520400662580" expanded="true" signature="491647:491777" ph="{...}" />
+            <marker date="1520400662580" expanded="true" signature="491817:491843" ph="/** 获取浏览器标识 ...*/" />
+            <marker date="1520400662580" expanded="true" signature="491881:492390" ph="{...}" />
+            <marker date="1520400662580" expanded="true" signature="492016:492292" ph="{...}" />
+            <marker date="1520400662580" expanded="true" signature="492092:492231" ph="{...}" />
+            <marker date="1520400662580" expanded="true" signature="492397:492459" ph="/** 检测本地是否已经存储了CToken ...*/" />
+            <marker date="1520400662580" expanded="true" signature="492495:492621" ph="{...}" />
+            <marker date="1520400662580" expanded="true" signature="492628:492682" ph="/** 输出Safencrypt格式的日志 ...*/" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -764,18 +804,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/safencrypt.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="134" column="19" lean-forward="false" selection-start-line="134" selection-start-column="19" selection-end-line="134" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/safencrypt.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="14328" lean-forward="false" selection-start-line="0" selection-start-column="14328" selection-end-line="0" selection-end-column="14328" />
+          <caret line="0" column="14358" lean-forward="false" selection-start-line="0" selection-start-column="14358" selection-end-line="0" selection-end-column="14358" />
           <folding />
         </state>
       </provider>
@@ -804,14 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/safencrypt-config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-53">
@@ -820,18 +844,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/ajax-inject.js">
+    <entry file="file://$PROJECT_DIR$/safencrypt.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="146" column="40" lean-forward="false" selection-start-line="146" selection-start-column="40" selection-end-line="146" selection-end-column="40" />
+        <state relative-caret-position="-1099">
+          <caret line="17199" column="50" lean-forward="false" selection-start-line="17199" selection-start-column="50" selection-end-line="17199" selection-end-column="50" />
+          <folding>
+            <marker date="1520400662580" expanded="true" signature="7550:7552" ph="{...}" />
+            <marker date="1520400662580" expanded="true" signature="490213:490293" ph="{...}" />
+            <marker date="1520400662580" expanded="true" signature="490213:490436" ph="{&quot;url&quot;: safencrypt_config.apply_public_key_url...}" />
+            <marker date="1520400662580" expanded="true" signature="490213:490444" ph="{...}" />
+            <marker date="1520400662580" expanded="true" signature="490329:490426" ph="{...}" />
+            <marker date="1520400662580" expanded="true" signature="490451:490475" ph="/** 注册客户端 ...*/" />
+            <marker date="1520400662580" expanded="true" signature="490551:491810" ph="{...}" />
+            <marker date="1520400662580" expanded="true" signature="490658:491802" ph="{...}" />
+            <marker date="1520400662580" expanded="true" signature="490858:491791" ph="{&quot;url&quot;: safencrypt_config.sign_up_client_url...}" />
+            <marker date="1520400662580" expanded="true" signature="491079:491212" ph="{&quot;type&quot;: REQ_TYPE_SIGN_UP_CLIENT...}" />
+            <marker date="1520400662580" expanded="true" signature="491256:491607" ph="{...}" />
+            <marker date="1520400662580" expanded="true" signature="491647:491777" ph="{...}" />
+            <marker date="1520400662580" expanded="true" signature="491817:491843" ph="/** 获取浏览器标识 ...*/" />
+            <marker date="1520400662580" expanded="true" signature="491881:492390" ph="{...}" />
+            <marker date="1520400662580" expanded="true" signature="492016:492292" ph="{...}" />
+            <marker date="1520400662580" expanded="true" signature="492092:492231" ph="{...}" />
+            <marker date="1520400662580" expanded="true" signature="492397:492459" ph="/** 检测本地是否已经存储了CToken ...*/" />
+            <marker date="1520400662580" expanded="true" signature="492495:492621" ph="{...}" />
+            <marker date="1520400662580" expanded="true" signature="492628:492682" ph="/** 输出Safencrypt格式的日志 ...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/safencrypt-config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/safencrypt.js">
+    <entry file="file://$PROJECT_DIR$/core/safencrypt.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="17175" column="49" lean-forward="false" selection-start-line="17175" selection-start-column="32" selection-end-line="17175" selection-end-column="49" />
+        <state relative-caret-position="-7">
+          <caret line="121" column="25" lean-forward="true" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/ajax-inject.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="166" column="24" lean-forward="true" selection-start-line="166" selection-start-column="24" selection-end-line="166" selection-end-column="24" />
           <folding />
         </state>
       </provider>
