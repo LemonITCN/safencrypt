@@ -85,7 +85,7 @@ public class SafencryptRequestWrapper extends HttpServletRequestWrapper {
                 data = URLDecoder.decode(data, "UTF-8");
             if (type == 2) {
                 // 注册客户端的加密
-                ClientInfo clientInfo = new ClientInfo(RSAEncryptService.decryptJSRequest(flag, data));
+                ClientInfo clientInfo = new ClientInfo(RSAEncryptService.decryptJSRequest(flag, data).substring(0, 16));
                 result = gson.toJson(clientInfo);
             }
             if (type == 3) {

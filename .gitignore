@@ -5,3 +5,5 @@ server/safencrypt-springboot/.idea/
 server/safencrypt-springboot/target/
 terminal/safencrypt-js/node_modules/
 terminal/safencrypt-js/lib/
+terminal/safencrypt-js/.idea/
+terminal/safencrypt-js/.idea/
