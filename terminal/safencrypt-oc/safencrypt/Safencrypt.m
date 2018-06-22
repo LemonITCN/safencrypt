@@ -10,6 +10,7 @@
 #import "SRSA.h"
 #import "StringUtil.h"
 #import "SAES.h"
+#import <objc/runtime.h>
 
 @implementation Safencrypt
 
@@ -28,10 +29,14 @@ static NSObject<SafencryptConfig> * _config;
     [LogUtil info: @"正在启动中...[author:1iURI]"];
     _delegate = delegate;
     _config = config;
-    [NSURLProtocol registerClass: [NetworkInject class]];
+    // 注入NetworkInject
+    [self injectNSURLSessionConfiguration];// 解决通过sessionWithConfiguration获取到的session无法监听网络请求的问题
+    [self injectNSURLRequestSetHttpBody];
+//    [NSURLProtocol registerClass: [NetworkInject class]];
+    
     NSString *t_cToken = [delegate onReadCToken];
     if (!t_cToken){// 未注册至服务器端
-        [LogUtil err: @"检测到当前浏览器未注册至服务器端，启动客户端注册机制..."];
+        [LogUtil warn: @"检测到当前浏览器未注册至服务器端，启动客户端注册机制..."];
         [self applyPublickeyWhenSuccess:^(NSString *modulus, NSString *exponent, NSString *flag) {
             // 申请公钥成功
             NSString *t_identifier = [self getIdentifier];
@@ -51,7 +56,6 @@ static NSObject<SafencryptConfig> * _config;
         }];
     }
     [LogUtil info:@"安全系统启动完毕"];
-    while(true){}
 }
 
 + (NSString *)getIdentifier{
@@ -62,6 +66,14 @@ static NSObject<SafencryptConfig> * _config;
         [_delegate onCreateIdentifier: t_identifier];
     }
     return t_identifier;
+}
+
++ (NSString *)getCToken{
+    return [_delegate onReadCToken];
+}
+
++ (NSString *)getUToken{
+    return [_delegate onReadUToken];
 }
 
 /**
@@ -123,7 +135,7 @@ static NSObject<SafencryptConfig> * _config;
         if (jsonReadErr) {// JSON解析失败
             failed(jsonReadErr);
         }
-        NSString *resultJSON = [SAES decryptWithData: dict[@"data"] Key: [self getIdentifier]];
+        NSString *resultJSON = [SAES decryptWithStr: dict[@"data"] Key: [self getIdentifier]];
         if (!resultJSON){
             // AES解密失败
             [LogUtil err: @"对注册客户端的结果进行AES解密时发生错误"];
@@ -191,6 +203,72 @@ CHECK_DOMAIN_SUCCESS:{// 在加密域名范围内
     else{
         return 4;
     }
+}
+
++ (void)injectNSURLSessionConfiguration{
+    Class cls = NSClassFromString(@"__NSCFURLSessionConfiguration") ?: NSClassFromString(@"NSURLSessionConfiguration");
+    Method originalMethod = class_getInstanceMethod(cls, @selector(protocolClasses));
+    Method stubMethod = class_getInstanceMethod([self class], @selector(protocolClasses));
+    if (!originalMethod || !stubMethod) {
+        [NSException raise:NSInternalInconsistencyException format:@"Couldn't load NEURLSessionConfiguration."];
+    }
+    method_exchangeImplementations(originalMethod, stubMethod);
+}
+
+- (NSArray *)protocolClasses {
+    return @[[NetworkInject class]];
+}
+
+// 定义一个与系统setHTTPBody匹配的IMP类型
+typedef void (*_VIMP) (NSMutableURLRequest *,SEL,NSData *);
+
+// 系统setHTTPBody的IMP存储
+static _VIMP _old_set_http_body_imp;
+
+// safencrypt-setHTTPBody方法，负责加密HTTPBody中的数据
+void safencryptSetHTTPBody(NSMutableURLRequest *SELF , SEL _cmd, NSData *data){
+    NSString *reqURLStr = [[SELF URL] absoluteString];
+    NSInteger reqType = [Safencrypt queryRequestType: reqURLStr];
+    if (data == NULL || ![Safencrypt isNeedEncrypt: reqURLStr] || reqType <= 2){
+        _old_set_http_body_imp(SELF ,_cmd , data);// 不需要加密
+    }
+    else {
+        NSString *key;
+        BOOL isBaseOnClient = [Safencrypt isBaseOnClientRequest: reqURLStr];
+        if(isBaseOnClient){
+            // 基于客户端加密
+            key = [Safencrypt getIdentifier];
+        }
+        else {
+            // 基于用户加密
+            key = [Safencrypt getUToken];
+        }
+        if (key && [key length] > 0) {// key有效
+            NSString *encryptData = [[SAES encryptWithData: data Key: key] base64EncodedStringWithOptions: 0];
+            // 获取CToken，稍后作为flag
+            NSString *cToken = [Safencrypt getCToken];
+            // 将数据拼装成Safencrypt通信报文格式
+            NSDictionary *preData = @{@"data": encryptData,
+                                      @"type": @(reqType),
+                                      @"flag": cToken};
+            // 将字典转成JSON格式的NSData
+            NSData *preDataJSON = [NSJSONSerialization dataWithJSONObject: preData options: NSJSONWritingPrettyPrinted error: nil];
+            // 调用系统的setHTTPBody，将加密的NSData存储
+            _old_set_http_body_imp(SELF ,_cmd , preDataJSON);
+        }
+    }
+}
+
++ (void)injectNSURLRequestSetHttpBody{
+    Class cls = NSClassFromString(@"NSMutableURLRequest");
+    // 获取系统setHTTPBody的原有方法selector
+    SEL set_http_body_sel = @selector(setHTTPBody:);
+    // 根据selector获取方法实现
+    Method oldMethod = class_getInstanceMethod(cls,  set_http_body_sel);
+    // 获取原来系统的实现，先保存起来，以备safencryptSetHTTPBody中调用
+    _old_set_http_body_imp = method_getImplementation(oldMethod);
+    // 替换系统的setHTTPBody方法为SafencryptSetHTTPBody方法
+    class_replaceMethod(cls, set_http_body_sel, (IMP)safencryptSetHTTPBody, NULL);
 }
 
 @end

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NetworkInject : NSURLProtocol
+@interface NetworkInject : NSURLProtocol <NSURLProtocolClient , NSURLSessionDataDelegate>
+
 
 @end

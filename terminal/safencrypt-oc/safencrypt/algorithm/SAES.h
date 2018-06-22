@@ -10,8 +10,12 @@
 
 @interface SAES : NSObject
 
-+ (NSString *)encryptWithData: (NSString *)data Key:(NSString *)key;
++ (NSString *)encryptWithStr: (NSString *)data Key:(NSString *)key;
 
-+ (NSString *)decryptWithData: (NSString *)data Key:(NSString *)key;
++ (NSString *)decryptWithStr: (NSString *)data Key:(NSString *)key;
+
++ (NSData *)encryptWithData: (NSData *)data Key:(NSString *)key;
+
++ (NSData *)decryptWithData: (NSData *)data Key:(NSString *)key;
 
 @end

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="n7f-gy-GZm"/>
+                        <viewControllerLayoutGuide type="bottom" id="NST-aW-IWF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SDY-R3-ebj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="509"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <string key="text">★★★★★★★★★★★★★★★★
+★★★★★★★★★★★★★★★★
+
+ 欢迎使用 Safencrypt 安全系统 
+
+★★★★★★★★★★★★★★★★
+★★★★★★★★★★★★★★★★</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75Y-Cn-RAy">
+                                <rect key="frame" x="87" y="522" width="200" height="35"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="YGH-TI-sO1"/>
+                                    <constraint firstAttribute="height" constant="35" id="hdX-im-M2i"/>
+                                </constraints>
+                                <state key="normal" title="发送基于客户端的请求">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendBaseClientReq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aOe-w7-VRw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0n-Sl-mWj">
+                                <rect key="frame" x="87" y="571" width="200" height="35"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Lyo-Hm-3Zl"/>
+                                    <constraint firstAttribute="width" constant="200" id="vjy-0h-Pto"/>
+                                </constraints>
+                                <state key="normal" title="发送基于用户身份的请求">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendBaseUserReq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Yt-lh-hj3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yci-9N-cAz">
+                                <rect key="frame" x="87" y="620" width="200" height="35"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="7at-Af-lqG"/>
+                                    <constraint firstAttribute="width" constant="200" id="BMU-yT-ehd"/>
+                                </constraints>
+                                <state key="normal" title="发送基于客户端的GET请求">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendBaseClientGetReq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iQC-h4-4f3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SDY-R3-ebj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4UW-et-hKh"/>
+                            <constraint firstItem="SDY-R3-ebj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="De3-7m-ACp"/>
+                            <constraint firstItem="75Y-Cn-RAy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ks0-5m-tXa"/>
+                            <constraint firstItem="i0n-Sl-mWj" firstAttribute="top" secondItem="75Y-Cn-RAy" secondAttribute="bottom" constant="14" id="W4d-LS-KAB"/>
+                            <constraint firstItem="Yci-9N-cAz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WQk-dD-GNu"/>
+                            <constraint firstAttribute="trailing" secondItem="SDY-R3-ebj" secondAttribute="trailing" id="azL-PT-EWM"/>
+                            <constraint firstItem="NST-aW-IWF" firstAttribute="top" secondItem="SDY-R3-ebj" secondAttribute="bottom" constant="158" id="ehw-vW-EdS"/>
+                            <constraint firstItem="i0n-Sl-mWj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kmo-sn-Rqu"/>
+                            <constraint firstItem="75Y-Cn-RAy" firstAttribute="top" secondItem="SDY-R3-ebj" secondAttribute="bottom" constant="13" id="meS-D0-Sdm"/>
+                            <constraint firstItem="Yci-9N-cAz" firstAttribute="top" secondItem="i0n-Sl-mWj" secondAttribute="bottom" constant="14" id="w2g-1s-0wd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logView" destination="SDY-R3-ebj" id="Lij-vZ-rgs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+</document>

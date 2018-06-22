@@ -11,6 +11,7 @@
 #import "SafencryptDelegate.h"
 #import "SafencryptConfig.h"
 
+
 @interface Safencrypt : NSObject
 
 /**
@@ -63,5 +64,19 @@
  @return 请求的类型数值
  */
 + (NSInteger)queryRequestType: (NSString *)urlStr;
+
+/**
+ 获取客户端标识字符串
+
+ @return 客户端标识字符串
+ */
++ (NSString *)getIdentifier;
+
+/**
+ 获取用户UToken
+
+ @return UToken字符串
+ */
++ (NSString *)getUToken;
 
 @end

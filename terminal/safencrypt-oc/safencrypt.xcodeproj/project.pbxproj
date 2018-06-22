@@ -95,6 +95,21 @@
 		5216F4012056477A00ED3608 /* SafencryptCommon.pch in Headers */ = {isa = PBXBuildFile; fileRef = 5216F4002056477A00ED3608 /* SafencryptCommon.pch */; };
 		5216F4042056484900ED3608 /* StringUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 5216F4022056484900ED3608 /* StringUtil.h */; };
 		5216F4052056484900ED3608 /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5216F4032056484900ED3608 /* StringUtil.m */; };
+		5251A8FC20579628008E297F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251A8FB20579628008E297F /* AppDelegate.m */; };
+		5251A8FF20579628008E297F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251A8FE20579628008E297F /* ViewController.m */; };
+		5251A90220579628008E297F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5251A90020579628008E297F /* Main.storyboard */; };
+		5251A90420579628008E297F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5251A90320579628008E297F /* Assets.xcassets */; };
+		5251A90720579628008E297F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5251A90520579628008E297F /* LaunchScreen.storyboard */; };
+		5251A90A20579628008E297F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251A90920579628008E297F /* main.m */; };
+		5251A9102057964E008E297F /* libsafencrypt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52DC02AA204F90CC0043D817 /* libsafencrypt.a */; };
+		5251A916205796D8008E297F /* SafencryptDelegateImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251A914205796D8008E297F /* SafencryptDelegateImpl.m */; };
+		5251A917205796D8008E297F /* SafencryptConfigImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251A915205796D8008E297F /* SafencryptConfigImpl.m */; };
+		5251A9262057C4AC008E297F /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251A91D2057C4AC008E297F /* AFURLResponseSerialization.m */; };
+		5251A9272057C4AC008E297F /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251A91E2057C4AC008E297F /* AFHTTPSessionManager.m */; };
+		5251A9282057C4AC008E297F /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251A9202057C4AC008E297F /* AFURLSessionManager.m */; };
+		5251A9292057C4AC008E297F /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251A9212057C4AC008E297F /* AFURLRequestSerialization.m */; };
+		5251A92A2057C4AC008E297F /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251A9232057C4AC008E297F /* AFNetworkReachabilityManager.m */; };
+		5251A92B2057C4AC008E297F /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251A9242057C4AC008E297F /* AFSecurityPolicy.m */; };
 		52775E6B2056750400F52228 /* SAES.h in Headers */ = {isa = PBXBuildFile; fileRef = 52775E692056750400F52228 /* SAES.h */; };
 		52775E6C2056750400F52228 /* SAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 52775E6A2056750400F52228 /* SAES.m */; };
 		52775E6F2056824400F52228 /* SafencryptConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 52775E6E2056824400F52228 /* SafencryptConfig.h */; };
@@ -110,6 +125,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5251A90E20579648008E297F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52DC02A2204F90CB0043D817 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52DC02A9204F90CC0043D817;
+			remoteInfo = safencrypt;
+		};
 		52DC02C5204F93800043D817 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 52DC02A2204F90CB0043D817 /* Project object */;
@@ -222,6 +244,33 @@
 		5216F4002056477A00ED3608 /* SafencryptCommon.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafencryptCommon.pch; sourceTree = "<group>"; };
 		5216F4022056484900ED3608 /* StringUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringUtil.h; sourceTree = "<group>"; };
 		5216F4032056484900ED3608 /* StringUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringUtil.m; sourceTree = "<group>"; };
+		5251A8F820579628008E297F /* safencrypt-ios-oc-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "safencrypt-ios-oc-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5251A8FA20579628008E297F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5251A8FB20579628008E297F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5251A8FD20579628008E297F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5251A8FE20579628008E297F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5251A90120579628008E297F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5251A90320579628008E297F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5251A90620579628008E297F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5251A90820579628008E297F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5251A90920579628008E297F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5251A912205796D8008E297F /* SafencryptDelegateImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafencryptDelegateImpl.h; sourceTree = "<group>"; };
+		5251A913205796D8008E297F /* SafencryptConfigImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafencryptConfigImpl.h; sourceTree = "<group>"; };
+		5251A914205796D8008E297F /* SafencryptDelegateImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafencryptDelegateImpl.m; sourceTree = "<group>"; };
+		5251A915205796D8008E297F /* SafencryptConfigImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafencryptConfigImpl.m; sourceTree = "<group>"; };
+		5251A9192057C4AC008E297F /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		5251A91A2057C4AC008E297F /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		5251A91B2057C4AC008E297F /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		5251A91C2057C4AC008E297F /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		5251A91D2057C4AC008E297F /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		5251A91E2057C4AC008E297F /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		5251A91F2057C4AC008E297F /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		5251A9202057C4AC008E297F /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		5251A9212057C4AC008E297F /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		5251A9222057C4AC008E297F /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		5251A9232057C4AC008E297F /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		5251A9242057C4AC008E297F /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		5251A9252057C4AC008E297F /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		52775E692056750400F52228 /* SAES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAES.h; sourceTree = "<group>"; };
 		52775E6A2056750400F52228 /* SAES.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAES.m; sourceTree = "<group>"; };
 		52775E6E2056824400F52228 /* SafencryptConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafencryptConfig.h; sourceTree = "<group>"; };
@@ -239,6 +288,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5251A8F520579628008E297F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5251A9102057964E008E297F /* libsafencrypt.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		52DC02A7204F90CC0043D817 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -381,6 +438,56 @@
 			path = util;
 			sourceTree = "<group>";
 		};
+		5251A8F920579628008E297F /* safencrypt-ios-oc-example */ = {
+			isa = PBXGroup;
+			children = (
+				5251A9182057C4AC008E297F /* AFNetworking */,
+				5251A911205796D8008E297F /* delegate */,
+				5251A8FA20579628008E297F /* AppDelegate.h */,
+				5251A8FB20579628008E297F /* AppDelegate.m */,
+				5251A8FD20579628008E297F /* ViewController.h */,
+				5251A8FE20579628008E297F /* ViewController.m */,
+				5251A90020579628008E297F /* Main.storyboard */,
+				5251A90320579628008E297F /* Assets.xcassets */,
+				5251A90520579628008E297F /* LaunchScreen.storyboard */,
+				5251A90820579628008E297F /* Info.plist */,
+				5251A90920579628008E297F /* main.m */,
+			);
+			path = "safencrypt-ios-oc-example";
+			sourceTree = "<group>";
+		};
+		5251A911205796D8008E297F /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+				5251A912205796D8008E297F /* SafencryptDelegateImpl.h */,
+				5251A914205796D8008E297F /* SafencryptDelegateImpl.m */,
+				5251A913205796D8008E297F /* SafencryptConfigImpl.h */,
+				5251A915205796D8008E297F /* SafencryptConfigImpl.m */,
+			);
+			path = delegate;
+			sourceTree = "<group>";
+		};
+		5251A9182057C4AC008E297F /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				5251A9192057C4AC008E297F /* AFSecurityPolicy.h */,
+				5251A91A2057C4AC008E297F /* AFNetworkReachabilityManager.h */,
+				5251A91B2057C4AC008E297F /* AFURLSessionManager.h */,
+				5251A91C2057C4AC008E297F /* AFURLRequestSerialization.h */,
+				5251A91D2057C4AC008E297F /* AFURLResponseSerialization.m */,
+				5251A91E2057C4AC008E297F /* AFHTTPSessionManager.m */,
+				5251A91F2057C4AC008E297F /* AFURLResponseSerialization.h */,
+				5251A9202057C4AC008E297F /* AFURLSessionManager.m */,
+				5251A9212057C4AC008E297F /* AFURLRequestSerialization.m */,
+				5251A9222057C4AC008E297F /* AFNetworking.h */,
+				5251A9232057C4AC008E297F /* AFNetworkReachabilityManager.m */,
+				5251A9242057C4AC008E297F /* AFSecurityPolicy.m */,
+				5251A9252057C4AC008E297F /* AFHTTPSessionManager.h */,
+			);
+			name = AFNetworking;
+			path = "../../../../../../Downloads/AFNetworking-master/AFNetworking";
+			sourceTree = "<group>";
+		};
 		52775E68205674EF00F52228 /* algorithm */ = {
 			isa = PBXGroup;
 			children = (
@@ -406,6 +513,7 @@
 			children = (
 				52DC02AC204F90CC0043D817 /* safencrypt */,
 				52DC02BB204F91230043D817 /* safencrypt-mac-oc-example */,
+				5251A8F920579628008E297F /* safencrypt-ios-oc-example */,
 				52DC02AB204F90CC0043D817 /* Products */,
 				52DC02C7204F93860043D817 /* Frameworks */,
 			);
@@ -416,6 +524,7 @@
 			children = (
 				52DC02AA204F90CC0043D817 /* libsafencrypt.a */,
 				52DC02BA204F91230043D817 /* safencrypt-mac-oc-example */,
+				5251A8F820579628008E297F /* safencrypt-ios-oc-example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -556,6 +665,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		5251A8F720579628008E297F /* safencrypt-ios-oc-example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5251A90D20579628008E297F /* Build configuration list for PBXNativeTarget "safencrypt-ios-oc-example" */;
+			buildPhases = (
+				5251A8F420579628008E297F /* Sources */,
+				5251A8F520579628008E297F /* Frameworks */,
+				5251A8F620579628008E297F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5251A90F20579648008E297F /* PBXTargetDependency */,
+			);
+			name = "safencrypt-ios-oc-example";
+			productName = "safencrypt-ios-oc-example";
+			productReference = 5251A8F820579628008E297F /* safencrypt-ios-oc-example.app */;
+			productType = "com.apple.product-type.application";
+		};
 		52DC02A9204F90CC0043D817 /* safencrypt */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52DC02B3204F90CC0043D817 /* Build configuration list for PBXNativeTarget "safencrypt" */;
@@ -600,6 +727,10 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = LemonIT.CN;
 				TargetAttributes = {
+					5251A8F720579628008E297F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					52DC02A9204F90CC0043D817 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -616,6 +747,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 52DC02A1204F90CB0043D817;
 			productRefGroup = 52DC02AB204F90CC0043D817 /* Products */;
@@ -624,11 +756,43 @@
 			targets = (
 				52DC02A9204F90CC0043D817 /* safencrypt */,
 				52DC02B9204F91230043D817 /* safencrypt-mac-oc-example */,
+				5251A8F720579628008E297F /* safencrypt-ios-oc-example */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		5251A8F620579628008E297F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5251A90720579628008E297F /* LaunchScreen.storyboard in Resources */,
+				5251A90420579628008E297F /* Assets.xcassets in Resources */,
+				5251A90220579628008E297F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		5251A8F420579628008E297F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5251A9292057C4AC008E297F /* AFURLRequestSerialization.m in Sources */,
+				5251A8FF20579628008E297F /* ViewController.m in Sources */,
+				5251A92A2057C4AC008E297F /* AFNetworkReachabilityManager.m in Sources */,
+				5251A9282057C4AC008E297F /* AFURLSessionManager.m in Sources */,
+				5251A90A20579628008E297F /* main.m in Sources */,
+				5251A917205796D8008E297F /* SafencryptConfigImpl.m in Sources */,
+				5251A8FC20579628008E297F /* AppDelegate.m in Sources */,
+				5251A9262057C4AC008E297F /* AFURLResponseSerialization.m in Sources */,
+				5251A9272057C4AC008E297F /* AFHTTPSessionManager.m in Sources */,
+				5251A92B2057C4AC008E297F /* AFSecurityPolicy.m in Sources */,
+				5251A916205796D8008E297F /* SafencryptDelegateImpl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		52DC02A6204F90CC0043D817 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -657,6 +821,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5251A90F20579648008E297F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52DC02A9204F90CC0043D817 /* safencrypt */;
+			targetProxy = 5251A90E20579648008E297F /* PBXContainerItemProxy */;
+		};
 		52DC02C6204F93800043D817 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 52DC02A9204F90CC0043D817 /* safencrypt */;
@@ -664,7 +833,65 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		5251A90020579628008E297F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5251A90120579628008E297F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5251A90520579628008E297F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5251A90620579628008E297F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		5251A90B20579628008E297F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7XU74H895V;
+				INFOPLIST_FILE = "safencrypt-ios-oc-example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.lemonit.safencrypt-ios-oc-example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5251A90C20579628008E297F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7XU74H895V;
+				INFOPLIST_FILE = "safencrypt-ios-oc-example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.lemonit.safencrypt-ios-oc-example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		52DC02B1204F90CC0043D817 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -713,6 +940,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -762,6 +990,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
@@ -782,7 +1011,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/safencrypt/OpenSSL/lib",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macos";
+				VALID_ARCHS = "armv7 armv7s arm64 i386 x86_64";
 			};
 			name = Debug;
 		};
@@ -800,7 +1032,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/safencrypt/OpenSSL/lib",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macos";
+				VALID_ARCHS = "armv7 armv7s arm64 i386 x86_64";
 			};
 			name = Release;
 		};
@@ -829,6 +1064,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5251A90D20579628008E297F /* Build configuration list for PBXNativeTarget "safencrypt-ios-oc-example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5251A90B20579628008E297F /* Debug */,
+				5251A90C20579628008E297F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		52DC02A5204F90CB0043D817 /* Build configuration list for PBXProject "safencrypt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
